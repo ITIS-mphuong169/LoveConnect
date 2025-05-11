@@ -1,0 +1,351 @@
+/* Safety Page Styles */
+
+/* Active navigation link */
+nav a.active {
+    color: #fd267a;
+    border-bottom: 2px solid #fd267a;
+    padding-bottom: 5px;
+}
+
+/* Safety Hero Section */
+.safety-hero {
+    background-image: url("/images/premium/premium11.jpg");
+    height: 800px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    padding: 60px 20px;
+    text-align: center;
+    /* background: linear-gradient(135deg, #fff3f5 0%, #ffe8f0 100%); */
+}
+
+.safety-hero-content {
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.safety-hero h1 {
+    text-wrap: nowrap;
+    font-size: 42px;
+    font-weight: 700;
+    color: #fe3f61;
+    margin-bottom: 20px;
+}
+
+
+.safety-hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Safety Features Section */
+.safety-features {
+    padding: 80px 20px;
+    background-color: white;
+}
+
+.safety-features h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #fe3f61;
+}
+
+.safety-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.safety-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: all 0.3s;
+    background-color: white;
+}
+
+.safety-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.safety-icon {
+    margin-bottom: 20px;
+    color: #fe3f61;
+}
+
+.safety-icon i {
+    font-size: 40px;
+}
+
+.safety-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #fe3f61;
+}
+
+/* Safety Tips Section */
+.safety-tips {
+    padding: 80px 20px;
+    background-color: #f8f8f8;
+}
+
+.safety-tips h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #fe3f61;
+}
+
+.tips-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.tip {
+    flex: 1;
+    min-width: 250px;
+    max-width: 260px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s;
+}
+
+.tip:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.tip-number {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fe3f61;
+    margin-bottom: 15px;
+}
+
+.tip h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #505965;
+}
+
+/* Safety Resources Section */
+.safety-resources {
+    padding: 80px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.safety-resources h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fe3f61;
+}
+
+.resources-intro {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    font-size: 18px;
+    color: #505965;
+}
+
+.resources-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.resource-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    transition: all 0.3s;
+    background-color: white;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.resource-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #fe3f61;
+}
+
+.resource-card p {
+    margin-bottom: 20px;
+    color: #505965;
+}
+
+.resource-link {
+    color: #fe3f61;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.resource-link i {
+    margin-left: 8px;
+    transition: transform 0.3s;
+}
+
+.resource-link:hover {
+    color: #fd267a;
+}
+
+.resource-link:hover i {
+    transform: translateX(5px);
+}
+
+/* Safety Commitment Section */
+.safety-commitment {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #fff3f5 0%, #ffe8f0 100%);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.commitment-content {
+    flex: 1;
+    min-width: 300px;
+    max-width: 550px;
+}
+
+.safety-commitment h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fe3f61;
+}
+
+.safety-commitment p {
+    margin-bottom: 20px;
+    color: #505965;
+    line-height: 1.6;
+}
+
+.commitment-image {
+    flex: 1;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.safety-report-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(to right, #fd267a, #ff6036);
+    color: white;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s;
+    margin-top: 20px;
+}
+
+.safety-report-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(254, 63, 97, 0.3);
+}
+
+/* Safety FAQ Section */
+.safety-faq {
+    padding: 80px 20px;
+    background-color: white;
+}
+
+.safety-faq h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #fe3f61;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.faq-item h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fe3f61;
+    font-weight: 600;
+}
+
+.faq-item p {
+    color: #505965;
+    line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .safety-hero h1 {
+        font-size: 32px;
+    }
+    
+    .safety-hero p {
+        font-size: 16px;
+    }
+    
+    .safety-card, 
+    .tip, 
+    .resource-card {
+        min-width: 100%;
+    }
+    
+    .safety-commitment {
+        flex-direction: column;
+    }
+    
+    .commitment-content,
+    .commitment-image {
+        max-width: 100%;
+    }
+}

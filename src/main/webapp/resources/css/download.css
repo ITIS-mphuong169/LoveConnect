@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #505965;
+    line-height: 1.6;
+}
+
+/*header*/
+header {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    height: 50px;
+    width: 100px;
+}
+
+.logo-text {
+    font-weight: 700;
+    font-size: 25px;
+    background: linear-gradient(to right, #fd267a, #ff6036);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #505965;
+    font-weight: 600;
+    font-size: 17px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #fd267a;
+}
+
+nav a.active {
+    color: #fd267a;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+.login-btn,
+.signup-btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all 0.3s;
+}
+
+.login-btn {
+    border: 1px solid #fe3f61;
+    background: transparent;
+    color: #fe3f61;
+}
+
+.signup-btn {
+    border: none;
+    background: linear-gradient(to right, #fd267a, #ff6036);
+    color: white;
+}
+
+.login-btn:hover {
+    background-color: rgba(254, 63, 97, 0.1);
+}
+
+.signup-btn:hover {
+    opacity: 0.9;
+}
+
+/* Download Page Specific Styles */
+.download-hero {
+    margin-top: 80px;
+    text-align: center;
+    background: linear-gradient(135deg, #fff3f5 0%, #ffe8f0 100%);
+    padding: 60px 20px;
+}
+
+.download-hero h1 {
+    margin: auto;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    color: #fe3f61;
+    max-width: 650px;
+}
+
+.download-hero p {
+    font-size: 18px;
+    max-width: 650px;
+    color: #505965;
+    margin: 20px auto;
+}
+
+.download-options {
+    padding: 80px 20px;
+    background-color: white;
+}
+
+.download-options h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #fe3f61;
+}
+
+.platform-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.platform-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.platform-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.platform-icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #fe3f61;
+}
+
+.platform-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #505965;
+}
+
+.platform-card p {
+    margin-bottom: 20px;
+}
+
+.download-btn {
+    padding: 12px 30px;
+    background: linear-gradient(to right, #fd267a, #ff6036);
+    color: white;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: inline-block;
+    margin-top: auto;
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(254, 63, 97, 0.3);
+}
+
+.qr-section {
+    background-color: #f8f8f8;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.qr-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #fe3f61;
+}
+
+.qr-section p {
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.qr-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.qr-code {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-code img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.qr-code span {
+    font-weight: 600;
+    color: #505965;
+}
+
+.faq-section {
+    padding: 80px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-section h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #fe3f61;
+}
+
+.faq-item {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.faq-question {
+    font-size: 20px;
+    font-weight: 600;
+    color: #505965;
+    margin-bottom: 10px;
+}
+
+.faq-answer {
+    color: #505965;
+}
+
+/*footer*/
+footer {
+    background-color: #212121;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 16px;
+}
+
+.footer-section i {
+    font-size: 25px;
+}
+
+.footer-section a:hover {
+    color: #fd267a;
+}
+
+.copyright {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    color: #ccc;
+}
+
+/*reponsive*/
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .download-hero h1 {
+        font-size: 32px;
+    }
+
+    .download-hero p {
+        font-size: 18px;
+    }
+
+    .platform-card {
+        min-width: 100%;
+    }
+
+    .qr-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150">
+    <!-- Background -->
+    <rect width="300" height="150" fill="#ffffff" rx="10" ry="10"/>
+
+    <!-- Left Heart -->
+    <path d="M75,60 C75,45 60,45 52.5,52.5 C45,45 30,45 30,60 C30,75 52.5,90 52.5,90 C52.5,90 75,75 75,60 Z" fill="#FF4D7D" stroke="#E6375A" stroke-width="2"/>
+
+    <!-- Right Heart -->
+    <path d="M240,60 C240,45 225,45 217.5,52.5 C210,45 195,45 195,60 C195,75 217.5,90 217.5,90 C217.5,90 240,75 240,60 Z" fill="#FF4D7D" stroke="#E6375A" stroke-width="2"/>
+
+    <!-- Connection Line -->
+    <path d="M52.5,75 C105,97.5 165,97.5 217.5,75" stroke="#4A90E2" stroke-width="3" fill="none" stroke-dasharray="5,5"/>
+</svg>

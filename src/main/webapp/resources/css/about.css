@@ -1,0 +1,549 @@
+nav a.active {
+    color: #fd267a;
+    border-bottom: 2px solid #fd267a;
+    padding-bottom: 5px;
+}
+
+/* Learn Hero Section */
+.learn-hero {
+    background-image: url("/images/premium/premium8.jpg");
+    height: 750px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    padding: 60px 20px;
+    text-align: center;
+    /* background: linear-gradient(135deg, #fff3f5 0%, #ffe8f0 100%); */
+}
+
+.learn-hero-content {
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.learn-hero h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #fe3f61;
+    margin-bottom: 40px;
+}
+
+
+
+/* Learn Categories */
+.learn-categories {
+    padding: 80px 20px;
+    background-color: white;
+}
+
+.learn-categories h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #fe3f61;
+}
+
+.categories-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.category-card {
+    flex: 1;
+    min-width: 250px;
+    max-width: 280px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: all 0.3s;
+    text-decoration: none;
+    color: #505965;
+    background-color: white;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.category-icon {
+    margin-bottom: 20px;
+    color: #fe3f61;
+}
+
+.category-icon i {
+    font-size: 40px;
+}
+
+.category-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #fe3f61;
+}
+
+/* Learn Sections */
+.learn-section {
+    padding: 80px 20px;
+}
+
+.learn-section.alt-bg {
+    background-color: #f8f8f8;
+}
+
+.learn-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.learn-section h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fe3f61;
+}
+
+.section-description {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+    font-size: 18px;
+    color: #505965;
+}
+
+/* Article Grid */
+.article-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.article-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 370px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s;
+    background-color: white;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+.article-content {
+    padding: 20px;
+}
+
+.article-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #505965;
+    font-weight: 600;
+}
+
+.article-card p {
+    margin-bottom: 15px;
+    color: #505965;
+    font-size: 14px;
+}
+
+.read-more {
+    color: #fe3f61;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.read-more i {
+    margin-left: 5px;
+    transition: transform 0.3s;
+}
+
+.read-more:hover {
+    color: #fd267a;
+}
+
+.read-more:hover i {
+    transform: translateX(5px);
+}
+
+/* Experts Section */
+.learn-experts {
+    padding: 80px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.learn-experts h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #fe3f61;
+}
+
+.experts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.expert-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: all 0.3s;
+    background-color: white;
+}
+
+.expert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.expert-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #fe3f61;
+}
+
+.expert-card h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #505965;
+}
+
+.expert-title {
+    font-size: 14px;
+    color: #fe3f61;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.expert-quote {
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #505965;
+    font-size: 14px;
+}
+
+.expert-articles {
+    color: #fe3f61;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.expert-articles i {
+    margin-left: 5px;
+    transition: transform 0.3s;
+}
+
+.expert-articles:hover {
+    color: #fd267a;
+}
+
+.expert-articles:hover i {
+    transform: translateX(5px);
+}
+
+/* Podcast Section */
+.learn-podcast {
+    padding: 80px 20px;
+    background-color: #f8f8f8;
+}
+
+.podcast-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+}
+
+.podcast-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.podcast-info h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fe3f61;
+}
+
+.podcast-info p {
+    margin-bottom: 30px;
+    color: #505965;
+    font-size: 16px;
+}
+
+.podcast-platforms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+    padding: 0;
+    list-style: none;
+}
+
+.podcast-platforms li a {
+    display: flex;
+    align-items: center;
+    color: #505965;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.podcast-platforms li a i {
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.podcast-platforms li a:hover {
+    color: #fe3f61;
+}
+
+.podcast-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #fe3f61;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.podcast-btn:hover {
+    background-color: #fd267a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(253, 38, 122, 0.2);
+}
+
+.podcast-episodes {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.episode-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s;
+}
+
+.episode-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.episode-number {
+    color: #fe3f61;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.episode-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #505965;
+}
+
+.episode-card p {
+    margin-bottom: 15px;
+    color: #505965;
+    font-size: 14px;
+}
+
+.listen-btn {
+    display: inline-flex;
+    align-items: center;
+    color: #fe3f61;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.listen-btn i {
+    margin-right: 5px;
+}
+
+.listen-btn:hover {
+    color: #fd267a;
+}
+
+/* Newsletter Section */
+.learn-newsletter {
+    padding: 80px 20px;
+    background-color: #fff3f5;
+    text-align: center;
+}
+
+.newsletter-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.learn-newsletter h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fe3f61;
+}
+
+.learn-newsletter p {
+    margin-bottom: 30px;
+    color: #505965;
+    font-size: 16px;
+}
+
+.newsletter-form {
+    display: flex;
+    margin-bottom: 15px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    border-radius: 50px 0 0 50px;
+    font-size: 16px;
+    outline: none;
+}
+
+.newsletter-form button {
+    padding: 12px 30px;
+    background-color: #fe3f61;
+    color: white;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: #fd267a;
+}
+
+.privacy-note {
+    font-size: 12px;
+    color: #777;
+}
+
+.privacy-note a {
+    color: #fe3f61;
+    text-decoration: none;
+}
+
+.privacy-note a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .learn-hero h1 {
+        font-size: 32px;
+    }
+    
+    .learn-hero p {
+        font-size: 16px;
+    }
+    
+    .category-card {
+        min-width: 200px;
+    }
+    
+    .article-card {
+        min-width: 280px;
+    }
+    
+    .expert-card {
+        min-width: 280px;
+    }
+    
+    .podcast-content {
+        flex-direction: column;
+    }
+    
+    .podcast-info, .podcast-episodes {
+        width: 100%;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+    }
+    
+    .newsletter-form input {
+        border-radius: 50px;
+        margin-bottom: 10px;
+    }
+    
+    .newsletter-form button {
+        border-radius: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .learn-hero h1 {
+        font-size: 28px;
+    }
+    
+    .learn-section h2,
+    .learn-categories h2,
+    .learn-experts h2,
+    .learn-newsletter h2 {
+        font-size: 26px;
+    }
+    
+    .section-description {
+        font-size: 16px;
+    }
+    
+    .article-card,
+    .expert-card {
+        min-width: 100%;
+    }
+}
