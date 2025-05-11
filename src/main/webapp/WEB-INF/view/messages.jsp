@@ -43,10 +43,11 @@
             <c:set var="lastMessage" value="${lastMessagesMap[match.matchId]}" />
             
             <div class="conversation-item 
-                        ${selectedMatch != null && selectedMatch.matchId == match.matchId ? 'active' : ''}"
-                 onclick="selectMatch('${match.matchId}')">
-                <img src="/images/users/${match.user1.userId == currentUser.userId ? match.user2.profilePictureUrl : match.user1.profilePictureUrl}" 
-                     alt="User" class="conversation-avatar">
+            ${selectedMatch != null && selectedMatch.matchId == match.matchId ? 'active' : ''}"
+            onclick="selectMatch('${match.matchId}')">
+            <c:set var="chatUser" value="${match.user1.userId == currentUser.userId ? match.user2 : match.user1}" />
+            <c:set var="chatAvatar" value="${empty chatUser.profilePictureUrl ? '/images/users/default-avatar.png' : chatUser.profilePictureUrl}" />
+            <img src="${chatAvatar}" onerror="this.src='/images/users/default-avatar.png'" alt="User" class="conversation-avatar">
                 <div class="conversation-info">
                     <div class="conversation-name">
                         ${match.user1.userId == currentUser.userId ? match.user2.fullName : match.user1.fullName}
@@ -90,9 +91,10 @@
         <c:if test="${selectedMatch != null}">
             <div class="chat-header">
                 <i class="fas fa-chevron-left back-button" style="display: none;"></i>
-                <img src="/images/users/${selectedMatch.user1.userId == currentUser.userId ? 
-                      selectedMatch.user2.profilePictureUrl : selectedMatch.user1.profilePictureUrl}" alt="User"
-                     class="chat-avatar">
+                <c:set var="chatUserHeader" value="${selectedMatch.user1.userId == currentUser.userId ? selectedMatch.user2 : selectedMatch.user1}" />
+                <c:set var="chatAvatarHeader" value="${empty chatUserHeader.profilePictureUrl ? '/images/users/default-avatar.png' : chatUserHeader.profilePictureUrl}" />
+                <img src="${chatAvatarHeader}" onerror="this.src='/images/users/default-avatar.png'" alt="User" class="chat-avatar">
+
                 <div class="chat-user-info">
                     <div class="chat-username">
                         ${selectedMatch.user1.userId == currentUser.userId ?
