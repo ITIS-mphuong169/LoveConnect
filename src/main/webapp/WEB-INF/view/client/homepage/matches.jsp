@@ -66,14 +66,14 @@
                     </c:when>
                     <c:otherwise>
                         <c:forEach var="match" items="${matches}">
-                            <div class="match-card ${match.messages.size() > 0 ? 'has-messages' : 'new-match'}">
+                            <div class="match-card ${hasMessagesMap[match.matchId] ? 'has-messages' : 'new-match'}">
                                 <div class="match-photo">
                                     <c:choose>
-                                        <c:when test="${match.user1.userId eq currentUser.id}">
+                                        <c:when test="${match.user1.userId eq currentUser.userId}">
                                             <img src="${match.user2.profilePictureUrl}" alt="${match.user2.fullName}">
                                         </c:when>
                                         <c:otherwise>
-                                            <img src="${match.user2.profilePictureUrl}" alt="${match.user2.fullName}">
+                                            <img src="${match.user1.profilePictureUrl}" alt="${match.user1.fullName}">
                                         </c:otherwise>
                                     </c:choose>
                                 </div>
@@ -81,11 +81,11 @@
                                     <div class="match-header">
                                         <h3 class="match-name">
                                             <c:choose>
-                                                <c:when test="${match.user1.userId eq currentUser.id}">
+                                                <c:when test="${match.user1.userId eq currentUser.userId}">
                                                     ${match.user2.fullName}
                                                 </c:when>
                                                 <c:otherwise>
-                                                    ${match.user2.fullName}
+                                                    ${match.user1.fullName}
                                                 </c:otherwise>
                                             </c:choose>
                                         </h3>
@@ -97,7 +97,7 @@
                                     </div>
                                     <div class="match-status">
                                         <c:choose>
-                                            <c:when test="${match.messages.size() > 0}">
+                                            <c:when test="${hasMessagesMap[match.matchId]}">
                                                 <i class="fas fa-comment-dots"></i> Đang trò chuyện
                                             </c:when>
                                             <c:otherwise>
@@ -112,13 +112,13 @@
                                     </a>
                                     <c:choose>
                                         <c:when test="${match.user1.userId eq currentUser.userId}">
-                                            <a href="/client/view-profile/view/${match.user2.userId}"
+                                            <a href="/client/view-profile/${match.user2.userId}"
                                                 class="view-profile-btn">
                                                 <i class="far fa-user"></i>
                                             </a>
                                         </c:when>
                                         <c:otherwise>
-                                            <a href="/client/view-profile/${match.user2.userId}"
+                                            <a href="/client/view-profile/${match.user1.userId}"
                                                 class="view-profile-btn">
                                                 <i class="far fa-user"></i>
                                             </a>

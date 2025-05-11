@@ -41,6 +41,7 @@ public class MessageController {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         User currentUser = userService.findUserByEmail(auth.getName());
         model.addAttribute("currentUser", currentUser);
+        model.addAttribute("user", currentUser); // Also add as "user" for existing references in JSP
         
         // Get matches list
         List<Match> matches = matchService.getMatchesForCurrentUser();
@@ -49,22 +50,31 @@ public class MessageController {
         // Map to store last messages for each match
         Map<Long, Message> lastMessagesMap = new HashMap<>();
         
-        // Get all selected messages and add to model
+        Match selectedMatch = null;
         List<Message> selectedMessages = new ArrayList<>();
+        
+        // Get selected match if available
         if (effectiveMatchId != null) {
-            Match selectedMatch = matchService.getMatchById(effectiveMatchId);
-            selectedMessages = messageService.getMessagesByMatchId(effectiveMatchId);
+            selectedMatch = matchService.getMatchById(effectiveMatchId);
             model.addAttribute("selectedMatch", selectedMatch);
         }
-        model.addAttribute("selectedMessages", selectedMessages);
         
-        // Get last message for each match for previews
+        // Process all matches to get message previews and selected messages in a single loop
         for (Match match : matches) {
             List<Message> messages = messageService.getMessagesByMatchId(match.getMatchId());
+            
+            // Store the last message for preview
             if (!messages.isEmpty()) {
                 lastMessagesMap.put(match.getMatchId(), messages.get(messages.size() - 1));
+                
+                // If this is the selected match, store its messages
+                if (selectedMatch != null && match.getMatchId().equals(selectedMatch.getMatchId())) {
+                    selectedMessages = messages;
+                }
             }
         }
+        
+        model.addAttribute("selectedMessages", selectedMessages);
         model.addAttribute("lastMessagesMap", lastMessagesMap);
 
         return "messages";
