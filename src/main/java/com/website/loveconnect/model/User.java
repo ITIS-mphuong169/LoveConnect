@@ -20,6 +20,8 @@ import java.util.Set;
 @AllArgsConstructor
 @Builder
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
+@Getter
+@Setter
 public class User {
 
     @Id

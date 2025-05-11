@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 
 @Data
 @NoArgsConstructor
@@ -29,9 +29,18 @@ public class Message {
     @Column(nullable = false)
     private String content;
 
+    @Temporal(TemporalType.TIMESTAMP)
     @CreationTimestamp
-    private LocalDateTime sentAt;
+    private Date sentAt; // ✅ Đã đúng kiểu cho JSTL
 
     @Column(name = "is_read")
     private boolean isRead;
+
+    public boolean getIsRead() {
+        return isRead;
+    }
+
+    public boolean getRead() {
+        return isRead;
+    }
 }
